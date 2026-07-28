@@ -24,8 +24,7 @@ Automatically searches the web via DuckDuckGo API.
 Scrapes content from trusted fact-checking domains (e.g., Snopes, Politifact, FactCheck.org).
 Evaluates web results for supporting or contradicting evidence.
 Interactive UI: Built using Gradio, providing an intuitive, web-based dashboard supporting both plain text claims and direct image uploads.
-🛠️ System Architecture
-Mermaid diagram
+
 📈 Analysis Pipeline (How It Works)
 Step	Method	Description
 1	BERT / NLP	Analyzes linguistic patterns and writing style within the text claim.
@@ -34,19 +33,5 @@ Step	Method	Description
 4	Image Forensics	Runs Error Level Analysis (ELA) and texture checks to search for edits/AI generation.
 5	Real-Time Fact Check	Live-checks fact-checking databases for matching debunks or articles.
 6	Weighted Ensemble	Computes a final probability score and prints a detailed analysis report.
-📦 Installation & Setup
-Prerequisites
-Make sure you have Python 3.8+ installed. You will also need Tesseract-OCR installed on your system if you plan to use Tesseract fallback for OCR.
 
-Install Dependencies
-bash
 
-pip install -q tensorflow torch transformers datasets
-pip install -q gradio easyocr pytesseract pillow
-pip install -q duckduckgo-search newspaper3k beautifulsoup4 lxml_html_clean
-Run the App
-Launch the Gradio dashboard interface:
-
-bash
-
-python app.py
