@@ -27,6 +27,7 @@ Interactive UI: Built using Gradio, providing an intuitive, web-based dashboard 
 
 📈 Analysis Pipeline (How It Works)
 Step	Method	Description
+
 1	BERT / NLP	Analyzes linguistic patterns and writing style within the text claim.
 2	OCR	Extracts text embedded in images/screenshots to verify against the claim.
 3	CLIP & BLIP	Generates an AI caption and checks if the image matches the context of the claim.
